@@ -2,7 +2,7 @@ name: Continuous Integration - Security
 on:
   pull_request:
     branches:
-      - dev-cicd_alan
+      - main
       
 jobs:
   bandit:
