@@ -1,0 +1,5 @@
+fsxlcw_env: dev
+dev:
+  log_level: ERROR
+  log_to_file: False
+  #log_to_file: /home/ec2-user/fsxlcw.log
