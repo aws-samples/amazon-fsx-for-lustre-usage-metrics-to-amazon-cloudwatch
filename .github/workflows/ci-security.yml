@@ -1,0 +1,17 @@
+name: Continuous Integration - Security
+on:
+  pull_request:
+    branches:
+      - dev-cicd_alan
+      
+jobs:
+  bandit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run bandit
+        uses: tj-actions/bandit@v5
+        with:
+          targets: |  # or a single string "."
+            test_package
+          options: "-r -s B101,B104"
